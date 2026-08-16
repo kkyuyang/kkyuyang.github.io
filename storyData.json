@@ -63,7 +63,7 @@
   },
   "storyScenes": [
     {
-      "id": "s1",
+      "id": "scene1",
       "type": "normal",
       "place": "start1",
       "backgroundMusic": "an Autumn Wind.mp3",
@@ -366,10 +366,10 @@
           ]
         }
       ],
-      "next": "s1_1"
+      "next": "scene1_1"
     },
     {
-      "id": "s1_1",
+      "id": "scene1_1",
       "type": "normal",
       "place": "start2",
       "cutsceneImage": "sucsess1.apng",
@@ -1270,10 +1270,10 @@
           ]
         }
       ],
-      "next": "s2"
+      "next": "scene2"
     },
     {
-      "id": "s2",
+      "id": "scene2",
       "type": "normal",
       "place": "Back1",
       "cutsceneImage": "Movie.png",
@@ -1465,10 +1465,10 @@
           "characters": []
         }
       ],
-      "next": "s2_1"
+      "next": "scene2_1"
     },
     {
-      "id": "s2_1",
+      "id": "scene2_1",
       "type": "normal",
       "place": "Back1",
       "cutsceneImage": "sucsess1.apng",
@@ -1741,19 +1741,62 @@
           ]
         }
       ],
-      "next": "s2_c"
+      "next": "scene2_1c"
     },
     {
-      "id": "s2_c",
+      "id": "scene2_1c",
       "type": "choice",
       "place": "Back1",
       "backgroundMusic": "Movie.mp3",
-      "dialogues": [],
-      "choices": [],
-      "next": "s2_2"
+      "dialogues": [
+        {
+          "speaker": "narrator",
+          "text": "소리치며 고개를 들면, 배가 불룩한 '조직원'과 사방에 쏟아진 '서류더미'가 보입니다."
+        }
+      ],
+      "choices": [
+        {
+          "text": "조직원",
+          "next": null,
+          "index": 1,
+          "reaction": {
+            "speaker": "narrator",
+            "text": "목소리가 기름지고, 배가 불룩한 남자입니다. 다만, 얼굴이 아주 희미하게 보입니다. 꿈이라 그런 것 같아요. 이런 엑스트라의 이목구비까지 신경 쓸 리 없는 것이죠.",
+            "characters": [
+              {
+                "id": "nahab1",
+                "emotion": "say3",
+                "position": "left"
+              }
+            ]
+          }
+        },
+        {
+          "text": "서류더미",
+          "next": null,
+          "index": 2,
+          "reaction": {
+            "speaker": "narrator",
+            "text": "글씨가 아주 뿌예 읽을 수 없습니다만… 당신은 본능적으로 깨닫습니다. 이것은 녹사회의 2인자를 감옥에 집어넣기 위해 당신이 모아온 자료들입니다. 이 조직의 마약카르텔에 대한 세세한 정보와 거래장부 등이 명시되어 있습니다. 역시 꿈이라 디테일은 부족하지만요!",
+            "characters": [
+              {
+                "id": "nahab1",
+                "emotion": "say3",
+                "position": "left"
+              }
+            ]
+          }
+        },
+        {
+          "text": "다 조사한 것 같다.",
+          "next": null,
+          "index": 3
+        }
+      ],
+      "next": "scene2_2"
     },
     {
-      "id": "s2_2",
+      "id": "scene2_2",
       "type": "normal",
       "place": "Back1",
       "cutsceneImage": "sucsess4.apng",
@@ -2017,10 +2060,10 @@
           ]
         }
       ],
-      "next": "s2_3"
+      "next": "scene2_3"
     },
     {
-      "id": "s2_3",
+      "id": "scene2_3",
       "type": "normal",
       "place": "Back1",
       "cutsceneImage": "sucsess1.apng",
@@ -2109,10 +2152,10 @@
           "cutscene": true
         }
       ],
-      "next": "s2_4"
+      "next": "scene2_4"
     },
     {
-      "id": "s2_4",
+      "id": "scene2_4",
       "type": "normal",
       "place": "Back1",
       "cutsceneImage": "fail1.apng",
@@ -2399,10 +2442,10 @@
           ]
         }
       ],
-      "next": "s2_check"
+      "next": "scene2_check"
     },
     {
-      "id": "s2_check",
+      "id": "scene2_check",
       "type": "normal",
       "place": "Back1",
       "checkAffection": true,
