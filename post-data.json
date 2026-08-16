@@ -1,14 +1,14 @@
 [
   {
-    "title": "글 목록 1번",
-    "date": "2025-09-01",
-    "file": "여기에파일명을적으세요1.json",
-    "category": "공지"
+    "title": "진상연",
+    "date": "2026-08-16",
+    "file": "JSY.json",
+    "category": "자캐"
   },
   {
-    "title": "글 목록 2번",
-    "date": "2025-09-02",
-    "file": "여기에파일명을적으세요2.json",
+    "title": "강호성",
+    "date": "2026-08-16",
+    "file": "GHS.json",
     "category": "자캐"
   }
 ]
