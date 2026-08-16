@@ -16,7 +16,8 @@
       "imageFolder": "bubble1",
       "emotions": {
         "default": "bu-default.png",
-        "zero": "bu-zero.png"
+        "zero": "bu-zero.png",
+        "smile": "bu-smile.png"
       }
     },
     "nahab1": {
