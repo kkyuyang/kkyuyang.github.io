@@ -1,0 +1,17 @@
+[
+    {
+        "title": "자캐이름1",
+        "file": "여기에파일명을적으세요1.json",
+        "thumbnail": "images/자캐이미지1.png"
+    },
+    {
+        "title": "자캐이름2",
+        "file": "여기에파일명을적으세요2.json",
+        "thumbnail": "images/자캐이미지2.png"
+    },
+    {
+        "title": "자캐이름3",
+        "file": "여기에파일명을적으세요3.json",
+        "thumbnail": "images/자캐이미지3.png"
+    }
+]
