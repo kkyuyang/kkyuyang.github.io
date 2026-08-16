@@ -1,18 +1,14 @@
 [
     {
-        "title": "자캐이름1",
-        "file": "여기에파일명을적으세요1.json",
-        "thumbnail": "images/자캐이미지1.png",
-        "world": "세계관 이름"
+        "title": "진상연",
+        "file": "JSY.json",
+        "thumbnail": "https://i.imgur.com/fJ1xpgR.png",
+        "world": "호상"
     },
     {
-        "title": "자캐이름2",
-        "file": "여기에파일명을적으세요2.json",
-        "thumbnail": "images/자캐이미지2.png"
+        "title": "강호성",
+        "file": "GHS.json",
+        "thumbnail": "https://i.imgur.com/je2knTk.png"
+        "world": "호상"
     },
-    {
-        "title": "자캐이름3",
-        "file": "여기에파일명을적으세요3.json",
-        "thumbnail": "images/자캐이미지3.png"
-    }
 ]
