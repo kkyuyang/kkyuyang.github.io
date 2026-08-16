@@ -1765,7 +1765,7 @@
       "choices": [
         {
           "text": "조직원",
-          "next": null,
+          "next": "scene2_1c",
           "index": 1,
           "reaction": {
             "speaker": "narrator",
@@ -1781,7 +1781,7 @@
         },
         {
           "text": "서류더미",
-          "next": null,
+          "next": "scene2_1c",
           "index": 2,
           "reaction": {
             "speaker": "narrator",
@@ -1797,7 +1797,7 @@
         },
         {
           "text": "다 조사한 것 같다.",
-          "next": null,
+          "next": "scene2_2",
           "index": 3
         }
       ],
