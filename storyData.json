@@ -1752,7 +1752,14 @@
       "dialogues": [
         {
           "speaker": "narrator",
-          "text": "소리치며 고개를 들면, 배가 불룩한 '조직원'과 사방에 쏟아진 '서류더미'가 보입니다."
+          "text": "소리치며 고개를 들면, 배가 불룩한 '조직원'과 사방에 쏟아진 '서류더미'가 보입니다.",
+          "characters": [
+            {
+              "id": "nahab1",
+              "emotion": "mad2",
+              "position": "center"
+            }
+          ]
         }
       ],
       "choices": [
