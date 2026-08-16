@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글쓰기용</title>
+    <title>밀키트</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center;  
             min-height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
@@ -66,7 +66,7 @@
             -ms-overflow-style: none;
         }
 
-        .editor-button {
+        .editor-button{
             margin: 10px;
         }
 
@@ -85,37 +85,34 @@
         }
 
         .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-        }
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
 
         .modal-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            max-width: 423px;
-            width: 90%;
-            max-height: 90%;
-            overflow-y: auto;
-            position: relative;
-        }
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 423px;
+    width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+}
 
-        .modal-close {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 24px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.modal-close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
         .bio {
             margin: 10px;
@@ -136,6 +133,11 @@
             list-style: none;
             padding: 0;
             margin: 0;
+        }
+
+        #posts-list h3{
+            color: #999999;
+            font-size: 16px;
         }
 
         #posts-list li a {
@@ -199,12 +201,12 @@
             transform: scale(1.05);
         }
 
-        .character-description {
-            overflow-y: auto;
-            max-height: 200px;
-            margin-top: 10px;
-            padding-right: 5px;
-        }
+.character-description {
+    overflow-y: auto;
+    max-height: 200px; 
+    margin-top: 10px;
+    padding-right: 5px; 
+}
     </style>
 </head>
 
@@ -218,19 +220,19 @@
                 <a href="editor.html" class="editor-link">글쓰기</a>
             </div>
         </div>
-
+        
         <div class="main">
             <div class="main-profile"></div>
-
+            
             <div id="post-list-container">
                 <div id="category-menu" style="display:none;">
                     <button data-category="all">전체</button>
-                    <button data-category="공지">공지</button>
-                    <button data-category="세계관">세계관</button>
+                    <button data-category="일상">공지</button>
+                    <button data-category="자캐">세계관</button>
                     <button data-category="자캐목록">자캐목록</button>
                 </div>
                 <ul id="posts-list" style="display:none;">
-                    <li>글 목록이 여기에 표시됩니다</li>
+                    <li>글 목록이 여기에 표시됩니다...</li>
                 </ul>
             </div>
         </div>
@@ -303,7 +305,7 @@
             <span class="modal-close">×</span>
             ${post.title ? `<h2>${post.title}</h2>` : ''}
             ${post.date ? `<p>${post.date}</p>` : ''}
-            ${isCharacter && post.image ? `<img src="${post.image}" alt="자캐 이미지" style="max-width:100%;">` : ''}
+            ${isCharacter && post.image ? `<img src="${post.image}" alt="캐릭터 이미지" style="max-width:100%;">` : ''}
             <div class="${isCharacter ? 'character-description' : ''}">${post.content_html}</div>
         `;
 
@@ -332,7 +334,7 @@
 
                 renderPostList('all', false);
             } catch (err) {
-                console.error("게시글/자캐 목록 불러오기 실패:", err);
+                console.error("게시글/캐릭터 목록 불러오기 실패:", err);
                 document.getElementById("posts-list").innerHTML = "<li>불러오기 오류</li>";
             }
         }
@@ -346,27 +348,51 @@
 
             if (category === "자캐목록") {
                 filteredPosts = allCharacters;
+
+                if (!filteredPosts || filteredPosts.length === 0) {
+                    postListElement.innerHTML = "<li>아직 작성된 자캐가 없습니다.</li>";
+                } else {
+                    const grouped = {};
+                    filteredPosts.forEach(char => {
+                        if (!grouped[char.world]) grouped[char.world] = [];
+                        grouped[char.world].push(char);
+                    });
+
+                    for (const world in grouped) {
+                        const sectionTitle = document.createElement("h3");
+                        sectionTitle.textContent = world;
+                        postListElement.appendChild(sectionTitle);
+
+                        const sectionContainer = document.createElement("div");
+                        sectionContainer.style.display = "flex";
+                        sectionContainer.style.flexWrap = "wrap";
+
+                        grouped[world].forEach(post => {
+                            const li = document.createElement("li");
+                            li.classList.add("character");
+                            const img = document.createElement("img");
+                            img.src = post.thumbnail;
+                            img.alt = post.title || "캐릭터 이미지";
+                            li.appendChild(img);
+
+                            li.addEventListener("click", () => {
+                                loadPostContent(post.file, true);
+                            });
+
+                            sectionContainer.appendChild(li);
+                        });
+
+                        postListElement.appendChild(sectionContainer);
+                    }
+                }
             } else {
                 filteredPosts = category === 'all' ? allPosts : allPosts.filter(p => p.category === category);
-            }
 
-            if (!filteredPosts || filteredPosts.length === 0) {
-                postListElement.innerHTML = "<li>아직 작성된 글이 없습니다.</li>";
-            } else {
-                filteredPosts.forEach(post => {
-                    const li = document.createElement("li");
-
-                    if (category === "자캐목록") {
-                        li.classList.add("character");
-                        const img = document.createElement("img");
-                        img.src = post.thumbnail;
-                        img.alt = post.title || "자캐 이미지";
-                        li.appendChild(img);
-
-                        li.addEventListener("click", () => {
-                            loadPostContent(post.file, true);
-                        });
-                    } else {
+                if (!filteredPosts || filteredPosts.length === 0) {
+                    postListElement.innerHTML = "<li>아직 작성된 글이 없습니다.</li>";
+                } else {
+                    filteredPosts.forEach(post => {
+                        const li = document.createElement("li");
                         const a = document.createElement("a");
                         a.href = "#";
                         a.textContent = post.title || "제목 없음";
@@ -375,14 +401,14 @@
                             loadPostContent(post.file, false);
                         });
                         li.appendChild(a);
-                    }
-
-                    postListElement.appendChild(li);
-                });
+                        postListElement.appendChild(li);
+                    });
+                }
             }
 
             postListElement.style.display = show ? "block" : "none";
         }
+
 
         function setupCategoryFilter() {
             const buttons = document.querySelectorAll('#category-menu button');
@@ -394,7 +420,7 @@
             });
         }
     </script>
-
+    
 </body>
 
 </html>
