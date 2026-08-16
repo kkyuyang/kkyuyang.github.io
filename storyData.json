@@ -34,11 +34,11 @@
         "shock": "na-shock.png",
         "TT": "na-TT.png",
         "annoy": "na-annoy.png",
-        "mad": "na-mad",
-        "mad2": "na-mad2",
-        "say": "na-say",
-        "say2": "na-say2",
-        "say3": "na-say3"
+        "mad": "na-mad.png",
+        "mad2": "na-mad2.png",
+        "say": "na-say.png",
+        "say2": "na-say2.png",
+        "say3": "na-say3.png"
       }
     }
   },
@@ -373,7 +373,7 @@
       "id": "scene1_1",
       "type": "normal",
       "place": "start2",
-      "cutsceneImage": "sucsess1.apng",
+      "cutsceneImage": "sucsess1.png",
       "backgroundMusic": "an Autumn Wind.mp3",
       "dialogues": [
         {
@@ -1472,7 +1472,7 @@
       "id": "scene2_1",
       "type": "normal",
       "place": "Back1",
-      "cutsceneImage": "sucsess1.apng",
+      "cutsceneImage": "sucsess1.png",
       "backgroundMusic": "Movie.mp3",
       "dialogues": [
         {
@@ -1807,7 +1807,7 @@
       "id": "scene2_2",
       "type": "normal",
       "place": "Back1",
-      "cutsceneImage": "sucsess4.apng",
+      "cutsceneImage": "sucsess4.png",
       "backgroundMusic": "Movie.mp3",
       "dialogues": [
         {
@@ -2074,7 +2074,7 @@
       "id": "scene2_3",
       "type": "normal",
       "place": "Back1",
-      "cutsceneImage": "sucsess1.apng",
+      "cutsceneImage": "sucsess1.png",
       "backgroundMusic": "Movie.mp3",
       "dialogues": [
         {
@@ -2166,7 +2166,7 @@
       "id": "scene2_4",
       "type": "normal",
       "place": "Back1",
-      "cutsceneImage": "fail1.apng",
+      "cutsceneImage": "fail1.png",
       "backgroundMusic": "Movie.mp3",
       "dialogues": [
         {
