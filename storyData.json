@@ -17,7 +17,13 @@
       "emotions": {
         "default": "bu-default.png",
         "zero": "bu-zero.png",
-        "smile": "bu-smile.png"
+        "smile": "bu-smile.png",
+        "smile2": "bu-smile2.png",
+        "side": "bu-side.png",
+        "say1": "bu-say1.png",
+        "say2": "bu-say2.png",
+        "say3": "bu-say3.png",
+        "sweat": "bu-sweat.png"
       }
     },
     "nahab1": {
@@ -39,6 +45,32 @@
         "say": "na-say.png",
         "say2": "na-say2.png",
         "say3": "na-say3.png"
+      }
+    },
+    "nahab2": {
+      "id": "nahab2",
+      "name": "나하브",
+      "color": "#ECDBB6",
+      "initialAffection": 0,
+      "minAffection": 0,
+      "maxAffection": 10,
+      "imageFolder": "nahab2",
+      "emotions": {
+        "default": "na-default.png",
+        "think": "na-think.png",
+        "shy": "na-shy.png"
+      }
+    },
+    "npc": {
+      "id": "npc",
+      "name": "npc",
+      "color": "#677868",
+      "initialAffection": 0,
+      "minAffection": 0,
+      "maxAffection": 0,
+      "imageFolder": "",
+      "emotions": {
+        "default": ""
       }
     }
   },
@@ -2448,30 +2480,24 @@
               "position": "center"
             }
           ]
-        }
-      ],
-      "next": "scene2_check"
-    },
-    {
-      "id": "scene2_check",
-      "type": "normal",
-      "place": "Back1",
-      "checkAffection": true,
-      "backgroundMusic": "Movie.mp3",
-      "dialogues": [
+        },
         {
           "speaker": "bubble1",
-          "text": "... 내가 그렇게 미웠어, 나하브?"
-        }
-      ],
-      "next": "normal_ending"
-    },
-    {
-      "id": "normal_ending",
-      "type": "ending",
-      "place": "Back1",
-      "backgroundMusic": "Movie.mp3",
-      "dialogues": [
+          "text": "... 내가 그렇게 미웠어, 나하브?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab1",
+              "emotion": "shock",
+              "position": "center"
+            }
+          ]
+        },
         {
           "speaker": "nahab1",
           "text": "그럴리가..사랑하지?",
@@ -2505,6 +2531,765 @@
               "position": "center"
             }
           ]
+        },
+        {
+          "speaker": "nahab1",
+          "text": "그으-...내가 너한테 가족을 잃어서?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "그래. 이제야 본론이 나오는군. 내가 10년 전에 너의 어머니를 죽여서...",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "side",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "그렇게 죽이고 싶다는 듯 보는데, 모를 수가 없지.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "nahab2",
+          "text": "(표정관리도 안하고 뭐했냐 황이문씨...)",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "nahab1",
+          "text": "그래서, 이렇게 오셔서 뭔 말씀을 하시려고? 보아하니 빌려고 온거 같진 않고...너도 본론을 말해봐. 일단 맞춰줄게.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say2",
+              "position": "center",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "내가 빌 필요가 뭐가 있어. 묶여있는 건 너고... 난 금방이라도 널 죽일 수 있는데.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say2",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say2",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "그리고 버블이 꺼내든 것은 38구경 리볼버입니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say2",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say2",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "한국 경찰들이 애용하는 모델인데 말이죠...",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say2",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say2",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "꿈이라도 세계관이 섞여있잖아...!",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say2",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say2",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "nahab1",
+          "text": "죽일거야? 그렇다고 하기엔~ 조직원들에겐 날 험하게 다루지 말라고 하던데?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say2",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say2",
+              "position": "center",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "nahab2",
+          "text": "(디테일 부족은...내가 영화보다 잔 탓...이겠지)",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say2",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "그건 바람이야. 언제든 마음은 변해. 특히 내가 잘 대해준 아이한테 배신당한 게 확정지어진다면 말이지...",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "zero",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "나하브, 한 번만 물을게.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "zero",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "날 배신한 거야?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "sweat",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "nahab1",
+          "text": "내 생각엔 오해가 있던게 분명해. 나 정신차리니까 여기 방이에였는걸. 나 함정에 빠진거 같아 버블.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "sweat",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "아, 함정.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "재미있는 소리네.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "버블은 당신에게 총구를 들이밉니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": ". 당신의 피부에 맞닿은 총구의 서늘함이 꼭 뼈에까지 치미는 것 같습니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "지금 죽으면, 당신은 어떻게 될까요?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "say3",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "speaker": "nahab1",
+          "text": "하, 안 믿을거면 왜 물어봤어..?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left"
+            },
+            {
+              "id": "nahab1",
+              "emotion": "zero",
+              "position": "center",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "nahab2",
+          "text": "(이제 꿈에서 깨려나~)",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "왜 물어봤냐고?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "mad",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "농담이니까.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "(천천히 무릎을 굽혀 앉아 나하브의 뺨을 매만진다.)",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "나는 널 믿지만, 내 부하들은 아니거든.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "이런 쇼가 잠깐이라도 필요했어.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "think",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "nahab2",
+          "text": "아-...하. 그래서 이런 쇼를-..? 거칠게도 하셔라-. 나 진짜 죽는 줄 알았잖아 자기야~",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "nahab2",
+          "text": "그럼 나 이제 풀어줄거야? 아니면 이 모습이 더 좋으면 이러고 있고~",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "귀엽다고 봐준 걸로 기어오르지는 마. (나하브의 어깨를 당겨 허리 숙인 자세로 등을 보이게 만들고)",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "버블은 당신의 손에 묶인 단단한 밧줄을 나이프로 끊어냅니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "smile2",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "bubble1",
+          "text": "이곳에 널 두고 가면 뒷말이 나올 거야. 며칠만 감시 명목으로 같이 지내야 할 것 같은데. 괜찮지?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left",
+              "active": true
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "nahab2",
+          "text": "당연하지~여부가 있겠어?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right",
+              "active": true
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "그렇게 버블이 당신을 데리고 나오자,",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "밖에 보초를 서던 조직원들이 당혹스러운 낯으로 수군대기 시작합니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "배신자인 당신을 버블이 직접 처단하리라 예상했던 모양입니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "버블은 그들의 시선에도 아랑곳 않고 원룸이 빽빽하게 들어찬 주택단지를 내려갑니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "그 전경이 사뭇 기묘합니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "당신과 버블이 지나간 자리는, 꼭 안개가 깔린 듯 뿌예지고 희미하게 변합니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "멀리 웅성이던 조연들의 소리가 작아지다 이윽고 툭 사라집니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "확실히 이곳은 꿈입니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "그렇지만 이곳이 당신의 꿈일까요?",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "버블은 오물이 거뭇거뭇 묻은 계단을 거리낌없이 내려옵니다.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        },
+        {
+          "speaker": "narrator",
+          "text": "이윽고 그의 발이 외부에 탁, 닿는 순간.",
+          "characters": [
+            {
+              "id": "bubble1",
+              "emotion": "say1",
+              "position": "left"
+            },
+            {
+              "id": "nahab2",
+              "emotion": "shy",
+              "position": "right"
+            }
+          ]
+        }
+      ],
+      "next": "scene2_check"
+    },
+    {
+      "id": "scene2_check",
+      "type": "normal",
+      "place": "Back1",
+      "checkAffection": true,
+      "backgroundMusic": "Movie.mp3",
+      "dialogues": [
+        {
+          "speaker": "narrator",
+          "text": "페이드아웃.",
+          "characters": []
+        }
+      ],
+      "next": "normal_ending"
+    },
+    {
+      "id": "normal_ending",
+      "type": "ending",
+      "place": "Back1",
+      "backgroundMusic": "Movie.mp3",
+      "dialogues": [
+        {
+          "speaker": "narrator",
+          "text": "세상이 암전됩니다.",
+          "characters": []
         }
       ]
     }
@@ -2518,8 +3303,8 @@
     },
     "common": {
       "normal": {
-        "title": "테스트 엔딩",
-        "message": "이것은 얼마나 잘 작동되는지 테스트하기 위한 엔딩이다. 1.apng는 잘 나오는가? / 2.호감도 시스템을 사용하지 않아도 되는가?"
+        "title": "엔딩",
+        "message": "언젠가 chapter3로 이어집니다…"
       }
     },
     "duo": [],
