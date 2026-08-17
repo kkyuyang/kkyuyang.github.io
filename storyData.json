@@ -36,7 +36,7 @@
       "maxAffection": 10,
       "imageFolder": "nahab1",
       "emotions": {
-        "default": "na-default.png",
+        "default": "na-think.png",
         "zero": "na-zero.png",
         "shock": "na-shock.png",
         "TT": "na-TT.png",
@@ -58,20 +58,7 @@
       "imageFolder": "nahab2",
       "emotions": {
         "default": "na-default.png",
-        "think": "na-think.png",
         "shy": "na-shy.png"
-      }
-    },
-    "npc": {
-      "id": "npc",
-      "name": "조직원",
-      "color": "#677868",
-      "initialAffection": 0,
-      "minAffection": 0,
-      "maxAffection": 0,
-      "imageFolder": "",
-      "emotions": {
-        "default": ""
       }
     }
   },
@@ -112,9 +99,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -128,9 +115,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -144,9 +131,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -160,9 +147,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -176,9 +163,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -192,9 +179,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -208,9 +195,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -224,9 +211,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -241,14 +228,14 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "음? 산책 가고 싶어? (버블의 머리칼을 쓰담다가)그럼 그럴까-? 아직은 추우니까 따뜻하게 입어야겠네.",
           "characters": [
             {
@@ -257,9 +244,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -275,9 +262,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -292,14 +279,14 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "그래도 밖에 꽤 추운데? 정말 그러고 갈거야?(놀란 눈으로 바라보다가)",
           "characters": [
             {
@@ -308,15 +295,15 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "나한테 너희 나라는 좀 추워..(이집트 사람이다)",
           "characters": [
             {
@@ -325,9 +312,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -343,14 +330,14 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "...너, 추위를 (자신보단)안타는건 알고 있었지만...그렇게 많이 안타던가..(하지만 밖은 추우니까 두툼한 옷을 받아 입는다. 옷장에 가서 버블의 옷중에 두툼한 것을 꺼내 버블에게 건네며) 감기로 아플까봐 걱정되는데~걱정하는 애인을 위해서 이것도 같이 입어 줄 수 있나~?",
           "characters": [
             {
@@ -359,9 +346,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -377,9 +364,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -393,9 +380,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         }
@@ -419,9 +406,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -435,9 +422,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -451,9 +438,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -467,9 +454,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -484,9 +471,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -500,9 +487,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -516,9 +503,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -533,14 +520,14 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "응. 잠시만...(주머니를 뒤적여 폰을 찾는다)",
           "characters": [
             {
@@ -549,9 +536,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -566,9 +553,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -582,9 +569,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -598,9 +585,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -614,14 +601,14 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "[자료조사] 굴림: 40 / 기준치: 40 → 보통 성공",
           "characters": [
             {
@@ -630,9 +617,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -647,9 +634,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -663,9 +650,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -679,9 +666,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -695,9 +682,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -711,9 +698,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -727,9 +714,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -744,14 +731,14 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "응...이 지역일대가 정전이라고 하네..? 조사하니까 합선 문제래-.나가려고 했는데 잘됐다, 어두운 방보단 밝은 밖이 좋잖아-.",
           "characters": [
             {
@@ -760,9 +747,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -778,9 +765,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -794,9 +781,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -810,9 +797,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -826,9 +813,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -842,9 +829,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -859,9 +846,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -875,9 +862,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -891,14 +878,14 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "어째 준비가 다 되어보인다~?",
           "characters": [
             {
@@ -907,9 +894,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -925,14 +912,14 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "어련하시겠어~(피식 웃으며 노트북 화면으로 시선을 돌린다)",
           "characters": [
             {
@@ -941,15 +928,15 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "뭐볼건데?",
           "characters": [
             {
@@ -958,9 +945,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -976,9 +963,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -993,9 +980,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1004,9 +991,9 @@
           "text": "둥근 마우스를 당신에게 건넨 버블은 냉장고에 다녀오겠다며 자리를 비웁니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1015,9 +1002,9 @@
           "text": "반짝이는 노트북 액정에는 친숙한 검색 엔진의 UI가 보입니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1026,9 +1013,9 @@
           "text": "미리 OTT 사이트에서 영화를 찾고 있어도 괜찮을 것 같은데...",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1037,9 +1024,9 @@
           "text": "앗,",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1048,20 +1035,20 @@
           "text": "◈ 관찰 판정",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "[관찰력] 굴림: 53 / 기준치: 65 → 보통 성공",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ],
@@ -1072,9 +1059,9 @@
           "text": "문득 메인홈에 걸린 추천 기사 하나가 당신의 눈에 밟힙니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1083,9 +1070,9 @@
           "text": "5년 전 사건을 파헤치다. 수면 중 뇌사에 이르렀던 13인의 기록'.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1094,9 +1081,9 @@
           "text": "당신도 익히 들어 알고 있는 도시괴담입니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1105,9 +1092,9 @@
           "text": "한 5년 쯤 전에 인터넷을 떠들썩하게 만들었던 경험담이 있었습니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1116,9 +1103,9 @@
           "text": "꿈 속에서 통각을 느꼈다던가요?",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1127,9 +1114,9 @@
           "text": "수십 명, 혹은 수백 명이 동시다발적으로 해당 증세를 호소하며 유명세를 불렸던 괴담입니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1138,9 +1125,9 @@
           "text": "꿈 속에서 죽는다면 어떻게 될까?'라는 물음에 사람들은 하나같이 입을 모아 말했었습니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1149,9 +1136,9 @@
           "text": "뇌사자들이 바로 그 경우일 것이라고.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1160,9 +1147,9 @@
           "text": "그래 봤자 5년 전을 마지막으로 더 이상 거론조차 되지 않는 괴담이었죠.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1171,9 +1158,9 @@
           "text": "기사를 무시한 당신은 OTT 사이트에 들어갑니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1182,9 +1169,9 @@
           "text": "때마침 돌아온 버블이 팝콘을 들고 앉아 노트북 화면을 들여다 보며 말을 올립니다.",
           "characters": [
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1199,9 +1186,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1215,9 +1202,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1231,9 +1218,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1247,14 +1234,14 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
         {
-          "speaker": "nahab1",
+          "speaker": "nahab2",
           "text": "이게 오늘의 영화 1등이래~대중의 픽을 믿어볼까?",
           "characters": [
             {
@@ -1263,9 +1250,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center",
+              "position": "right",
               "active": true
             }
           ]
@@ -1281,9 +1268,9 @@
               "active": true
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         },
@@ -1297,9 +1284,9 @@
               "position": "left"
             },
             {
-              "id": "nahab1",
+              "id": "nahab2",
               "emotion": "default",
-              "position": "center"
+              "position": "right"
             }
           ]
         }
@@ -1729,7 +1716,7 @@
           ]
         },
         {
-          "speaker": "npc",
+          "speaker": "조직원",
           "text": "형님 깜빵에 처넣으려고 이런 걸 다 모았어? 주워준 은혜도 모르고 등 뒤에 칼을 꽂아?",
           "characters": [
             {
@@ -1752,7 +1739,7 @@
           ]
         },
         {
-          "speaker": "npc",
+          "speaker": "조직원",
           "text": "어딜 시치미야! 네 방에서 이게 전부 나왔는데. 어? (두꺼운 손가락으로 머리를 툭툭 건드리면서)",
           "characters": [
             {
@@ -2013,7 +2000,7 @@
           ]
         },
         {
-          "speaker": "npc",
+          "speaker": "조직원",
           "text": "증거가 이렇게 있으니 네놈도 형님한테 끝이겠지. 유언이나 생각해놔라. (킬킬댈 때마다 뱃살이 흔들림)",
           "characters": [
             {
@@ -2220,7 +2207,7 @@
           ]
         },
         {
-          "speaker": "npc",
+          "speaker": "조직원",
           "text": "오셨습니까, 형님!!",
           "characters": [
             {
@@ -2334,7 +2321,7 @@
           ]
         },
         {
-          "speaker": "npc",
+          "speaker": "조직원",
           "text": "형님이 어떻게 여기까지 오셨습니까...!",
           "characters": [
             {
@@ -2594,10 +2581,9 @@
               "position": "left"
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right",
-              "active": true
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2710,10 +2696,9 @@
               "position": "left"
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right",
-              "active": true
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2728,9 +2713,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2745,9 +2730,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2762,9 +2747,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2894,10 +2879,9 @@
               "position": "left"
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right",
-              "active": true
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2912,9 +2896,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2929,9 +2913,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2946,9 +2930,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2963,9 +2947,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
@@ -2980,9 +2964,9 @@
               "active": true
             },
             {
-              "id": "nahab2",
-              "emotion": "think",
-              "position": "right"
+              "id": "nahab1",
+              "emotion": "default",
+              "position": "center"
             }
           ]
         },
