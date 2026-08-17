@@ -23,7 +23,8 @@
         "say1": "bu-say1.png",
         "say2": "bu-say2.png",
         "say3": "bu-say3.png",
-        "sweat": "bu-sweat.png"
+        "sweat": "bu-sweat.png",
+        "mad": "bu-mad.png"
       }
     },
     "nahab1": {
@@ -63,7 +64,7 @@
     },
     "npc": {
       "id": "npc",
-      "name": "npc",
+      "name": "조직원",
       "color": "#677868",
       "initialAffection": 0,
       "minAffection": 0,
